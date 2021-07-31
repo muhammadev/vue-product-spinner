@@ -97,10 +97,14 @@ export default {
       this.imagesPreloaded = false;
       this.handlePreload();
       this.initSpinner();
-    }
+    },
+    "spinner.current": function() {
+      this.$emit("product-img-current", this.spinner.current - 1);
+    },
   },
   created() {
     this.initSpinner();
+    console.log("created!!!");
   },
   beforeMount() {
     this.handlePreload();

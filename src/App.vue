@@ -9,6 +9,7 @@
         :infinite="props.infinite"
         :mouseWheel="props.mouseWheel"
         :animation="props.animation"
+        @car-color-spin="hopeworks"
         sliderClass="demo-slider"
       >
         <PulseLoader color="#3f51b5" />
